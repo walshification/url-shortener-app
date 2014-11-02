@@ -20,6 +20,16 @@ class LinksController < ApplicationController
   end
 
   def show
+    @links = Link.all
     @link = Link.find_by(:id => params[:id])
+  end
+
+  def edit
+    @link = Link.find_by(:id => params[:id])
+  end
+
+  def update
+    @link = Link.find_by(:id => params[:id])
+    @link.update(params[:link])
   end
 end

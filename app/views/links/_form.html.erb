@@ -1,0 +1,13 @@
+<%= form_for @link do |f| %>
+  <div>
+    <%= f.label :slug %>
+    <%= f.text_field :slug %>
+  </div>
+  <div>
+    <%= f.label :target_url %>
+    <%= f.text_field :target_url %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
